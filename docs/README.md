@@ -3,9 +3,6 @@
 В данной библиотеке реализованы функции рассчёта периметра и площади круга, прямоугольника и квадрата
 ```
 
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
 ## Треугольник
 
 **Для треугольника реализованы функции `area` и `perimeter`**
