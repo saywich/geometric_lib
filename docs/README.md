@@ -3,7 +3,7 @@
 В данной библиотеке реализованы функции рассчёта периметра и площади круга, прямоугольника и квадрата
 ```
 
-## Треугольник
+## [Треугольник](https://github.com/saywich/geometric_lib/blob/new_features_465938/triangle.py)
 
 **Для треугольника реализованы функции `area` и `perimeter`**
 
@@ -36,7 +36,7 @@ c = 5
 triangle_perimeter = perimeter(a, b, c) # 12
 ```
 
-## Квадрат
+## [Квадрат](https://github.com/saywich/geometric_lib/blob/new_features_465938/square.py)
 
 **Для квадрата реализованы функции `area` и `perimeter`**
 
@@ -66,7 +66,7 @@ a = 3
 square_perimeter = perimeter(a) # 12
 ```
 
-## Прямоугольник
+## [Прямоугольник](https://github.com/saywich/geometric_lib/blob/new_features_465938/rectangle.py)
 
 **Для прямоугольника реализованы функции `area` и `perimeter`**
 
@@ -98,7 +98,7 @@ b = 4
 rectangle_perimeter = perimeter(a, b) # 14
 ```
 
-## Круг
+## [Круг](https://github.com/saywich/geometric_lib/blob/new_features_465938/circle.py)
 
 **Для круга реализованы функции `area` и `perimeter`**
 
