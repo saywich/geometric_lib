@@ -5,7 +5,7 @@ def area(a, h):
     Пример вызова:
         triangle_area = area(5, 12)
     '''
-    return a * h / 2 
+    return int(a) * int(h) / 2 
 
 
 def perimeter(a, b, c):
@@ -22,5 +22,5 @@ def perimeter(a, b, c):
         Пример вызова:
             triangle_perimeter = perimeter(5, 12)
     '''
-    return a + b + c
+    return int(a) + int(b) + int(c)
 

@@ -6,7 +6,7 @@ def area(a):
     Пример вызова:
         square_area = area(6)
     '''
-    return a * a
+    return int(a) * int(a)
 
 
 def perimeter(a):
@@ -16,5 +16,5 @@ def perimeter(a):
     Пример вызова:
         square_perimeter = perimeter(6)
     '''
-    return 4 * a
+    return 4 * int(a)
 

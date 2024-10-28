@@ -13,7 +13,7 @@ def area(a, b):
             rectangle_area = area(10, 12)
     '''
 
-    return a * b 
+    return int(a) * int(b)
 
 
 def perimeter(a, b):
@@ -31,6 +31,5 @@ def perimeter(a, b):
             rectangle_perimeter = perimeter(10, 12)
     '''
 
-
-    return (a + b) * 2
+    return (int(a) + int(b)) * 2
 

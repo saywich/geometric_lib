@@ -8,7 +8,7 @@ def area(r):
     Пример вызова:
         circle_area = area(10)
     '''
-    return math.pi * r * r
+    return math.pi * int(r) * int(r)
 
 
 def perimeter(r):
@@ -18,5 +18,5 @@ def perimeter(r):
     Пример вызова:
         circle_perimeter = perimeter(10)
     '''
-    return 2 * math.pi * r
+    return 2 * math.pi * int(r)
 
