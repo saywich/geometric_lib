@@ -14,7 +14,7 @@ class CircleTestCase(unittest.TestCase):
     def test_string_area(self):
         r = "10"
         result = area(r)
-        self.assertEqual(result, pi * (r ** 2))
+        self.assertEqual(result, pi * int(r) ** 2)
 
     def test_zero_area(self):
         self.assertRaises(ValueError, area, 0)
@@ -31,7 +31,7 @@ class CircleTestCase(unittest.TestCase):
     def test_string_perimeter(self):
         r = "10"
         result = perimeter(r)
-        self.assertEqual(result, 2 * pi * r)
+        self.assertEqual(result, 2 * pi * int(r))
 
     def test_zero_perimeter(self):
         self.assertRaises(ValueError, perimeter, 0)
