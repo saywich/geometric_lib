@@ -1,0 +1,43 @@
+name: geometrics_ci
+
+on:
+  push:
+    branches: [ "new_features_465938" ]
+  pull_request:
+    branches: [ "new_features_465938" ]
+
+jobs:
+  geometric-tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        system: [ubuntu-latest, windows-latest]
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    
+    runs-on: ${{ matrix.system }}
+
+    steps:
+      - name: Use actions
+        if: ${{ !cancelled() }}
+        uses: actions/checkout@v4
+      
+      - name: Setup python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run rectangle tests
+        if: ${{ !cancelled() }}
+        run: python3 -m unittest ./tests/rectangle_test.py
+      
+      - name: Run square tests
+        if: ${{ !cancelled() }}
+        run: python3 -m unittest ./tests/square_test.py
+      
+      - name: Run circle tests
+        if: ${{ !cancelled() }}
+        run: python3 -m unittest ./tests/circle_test.py
+      
+      - name: Run triangle tests
+        if: ${{ !cancelled() }}
+        run: python3 -m unittest ./tests/triangle_test.py

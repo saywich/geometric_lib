@@ -13,7 +13,13 @@ def area(a, b):
             rectangle_area = area(10, 12)
     '''
 
-    return int(a) * int(b)
+    a_value = int(a);
+    b_value = int(b);
+
+    if (a_value <= 0 or b_value <= 0):
+        raise ValueError("Values must be positive integers")
+
+    return a_value * b_value
 
 
 def perimeter(a, b):
@@ -31,5 +37,11 @@ def perimeter(a, b):
             rectangle_perimeter = perimeter(10, 12)
     '''
 
-    return (int(a) + int(b)) * 2
+    a_value = int(a);
+    b_value = int(b);
+
+    if (a_value <= 0 or b_value <= 0):
+        raise ValueError("Values must be positive integers")
+
+    return (a_value + b_value) * 2
 

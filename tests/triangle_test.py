@@ -11,6 +11,10 @@ class TriangleTestCase(unittest.TestCase):
     def test_string_area(self):
         result = area("10", "10")
         self.assertEqual(result, 50)
+    
+    def test_float_area(self):
+        result = area(10.2, 10.2)
+        self.assertEqual(result, 50)
 
     def test_zero_area(self):
         self.assertRaises(ValueError, area, 0, 0)

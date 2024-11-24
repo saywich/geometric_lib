@@ -6,7 +6,13 @@ def area(a):
     Пример вызова:
         square_area = area(6)
     '''
-    return int(a) * int(a)
+
+    a_value = int(a);
+
+    if (a_value <= 0):
+        raise ValueError("Value must be positive integers")
+    
+    return a_value * a_value
 
 
 def perimeter(a):
@@ -16,5 +22,11 @@ def perimeter(a):
     Пример вызова:
         square_perimeter = perimeter(6)
     '''
-    return 4 * int(a)
+
+    a_value = int(a);
+
+    if (a_value <= 0):
+        raise ValueError("Value must be positive integers")
+
+    return 4 * a_value
 
